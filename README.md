@@ -28,7 +28,7 @@ There are two main types:
 The **Kernel** is the core of an operating system.  
 It manages system resources, memory, processes, and hardware communication.
 ---
-
+kernel.jpg
 ## 🐚 Shell and Its Categories
 The **Shell** is an interface between the user and the kernel.
 ---
