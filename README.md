@@ -63,3 +63,4 @@ The root has full administrative privileges and access to all files and commands
 | `mv src dest`   | Moves or renames a file or directory        |
 
 ![image](https://github.com/user-attachments/assets/3bca2ac1-b138-4f0d-9a87-be9547ca0f8c)
+![image](https://github.com/user-attachments/assets/a0856ad2-5a84-4c10-bd5f-91fd95484e97)
