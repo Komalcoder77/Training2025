@@ -62,3 +62,4 @@ The root has full administrative privileges and access to all files and commands
 | `whatis cmd`    | Gives a one-line description of a command   |
 | `mv src dest`   | Moves or renames a file or directory        |
 
+![image](https://github.com/user-attachments/assets/3bca2ac1-b138-4f0d-9a87-be9547ca0f8c)
