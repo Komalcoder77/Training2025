@@ -61,18 +61,3 @@ The root has full administrative privileges and access to all files and commands
 | `whatis cmd`    | Gives a one-line description of a command   |
 | `mv src dest`   | Moves or renames a file or directory        |
 
----
-
-### ✅ Example Command Usage
-
-```bash
-pwd                     # Show current directory
-ls                      # List files/folders
-cd Documents            # Move to Documents folder
-mkdir new_folder        # Create a folder
-touch file.txt          # Create a file
-cat file.txt            # View file content
-cp file.txt backup.txt  # Copy file
-mv file.txt notes.txt   # Rename file
-whoami                  # Check logged-in user
-date                    # Show date/time
