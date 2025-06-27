@@ -24,13 +24,13 @@ There are two main types:
 
 # Day 2 - Linux Basics: Kernel, Shell, Root, and Command
 
-## 🧠 Kernel
+## Kernel
 The **Kernel** is the core of an operating system.  
 It manages system resources, memory, processes, and hardware communication.
 ---
 ![image](https://github.com/user-attachments/assets/339b746b-82f4-498d-aa6c-6fb7cdd6f1b7)
 
-## 🐚 Shell and Its Categories
+## Shell and Its Categories
 The **Shell** is an interface between the user and the kernel.
 ---
 ### Types of Shells:
@@ -40,7 +40,7 @@ zsh (fancy waiter, more features)
 fish ( user-friendliness, interactive features)
 ---
 
-## 👑 Root User
+## Root User
 **Root** is the superuser in Linux systems.  
 The root has full administrative privileges and access to all files and commands.
 ---
