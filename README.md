@@ -13,9 +13,7 @@
 - [VirtualBox Download](https://www.virtualbox.org/)
 - [Visual C++ Redistributables](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist)
 - [Ubuntu ISO](https://ubuntu.com/download/desktop)
-
-# Day 2 - Linux Basics: Booting, Kernel, Shell, Root, and Command
-
+---
 ## 🔁 Booting and Its Types
 **Booting** is the process of starting or restarting a computer system.  
 There are two main types:
@@ -23,6 +21,8 @@ There are two main types:
 1. **Cold Booting** – When the system is powered on from an off state.
 2. **Warm Booting** – When the system restarts without being turned off (e.g., using `Ctrl + Alt + Del`).
 ---
+
+# Day 2 - Linux Basics: Kernel, Shell, Root, and Command
 
 ## 🧠 Kernel
 The **Kernel** is the core of an operating system.  
