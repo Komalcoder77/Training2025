@@ -100,3 +100,5 @@ The root has full administrative privileges and access to all files and commands
 ![image](https://github.com/user-attachments/assets/2e40ac72-9e72-4eea-b88f-b41968854132)
 ![Uploading image.png…]()
 
+#Example of using variable:
+
