@@ -106,5 +106,6 @@ The root has full administrative privileges and access to all files and commands
 ![image](https://github.com/user-attachments/assets/60a7d512-4c33-48e2-abc3-457ea029a3df)
 
 # Example of making table of a number:
+![image](https://github.com/user-attachments/assets/f8dbd94e-0678-4c15-bfa5-c936928ddeae)
 
 ![image](https://github.com/user-attachments/assets/31c2524c-0979-42b4-b36c-260a95123fee)
