@@ -78,6 +78,7 @@ The root has full administrative privileges and access to all files and commands
 ![image](https://github.com/user-attachments/assets/12fb724e-b6ac-41c3-9be9-33b9f4d3b1fa)
 
 ![image](https://github.com/user-attachments/assets/c1671d97-228f-4a92-9bdb-5c7406282a9c)
+![image](https://github.com/user-attachments/assets/08f1da85-b34d-43e4-9a4e-929c5a4c2fc8)
 
 2. **Shell Script Creation (`.sh` files)**
    - Created basic shell scripts using `nano`
