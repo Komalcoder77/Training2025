@@ -98,7 +98,8 @@ The root has full administrative privileges and access to all files and commands
 4. **Pipes (`|`)**
    - Connected commands to filter/process output:
 ![image](https://github.com/user-attachments/assets/2e40ac72-9e72-4eea-b88f-b41968854132)
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/a32d62f7-2823-4db1-8455-3c4ce6e6532d)
 
-#Example of using variable:
+
+# Example of using variable:
 
