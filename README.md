@@ -64,3 +64,33 @@ The root has full administrative privileges and access to all files and commands
 
 ![image](https://github.com/user-attachments/assets/3bca2ac1-b138-4f0d-9a87-be9547ca0f8c)
 ![image](https://github.com/user-attachments/assets/a0856ad2-5a84-4c10-bd5f-91fd95484e97)
+
+## Day 3 – Linux File Permissions, Redirection & Pipes
+
+### Topics Covered:
+
+1. **File Permissions using `chmod`**
+   - Modified file permissions to control access:
+     - `chmod 444 file` → read-only for all users
+     - `chmod 644 file` → read/write for owner, read-only for others
+     - `chmod +x script.sh` → make a shell script executable
+
+2. **Shell Script Creation (`.sh` files)**
+   - Created basic shell scripts using `nano`
+   - Saved with `.sh` extension
+   - Made executable using `chmod +x`
+   - Ran scripts using: `./filename.sh`
+
+3. **Input/Output Redirection**
+   - Used redirection operators:
+     - `>` → overwrite file
+     - `>>` → append to file
+     - `<` → read input from file
+   - Example: 
+    
+
+4. **Pipes (`|`)**
+   - Connected commands to filter/process output:
+     - `cat file.txt | grep word` → shows lines containing "word"
+     - `ls | grep .sh` → lists only `.sh` files
+
