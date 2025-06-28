@@ -97,6 +97,5 @@ The root has full administrative privileges and access to all files and commands
 
 4. **Pipes (`|`)**
    - Connected commands to filter/process output:
-     - `cat file.txt | grep word` → shows lines containing "word"
-     - `ls | grep .sh` → lists only `.sh` files
+![image](https://github.com/user-attachments/assets/2e40ac72-9e72-4eea-b88f-b41968854132)
 
