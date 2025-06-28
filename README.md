@@ -92,7 +92,8 @@ The root has full administrative privileges and access to all files and commands
      - `>>` → append to file
      - `<` → read input from file
    - Example: 
-    
+    ![image](https://github.com/user-attachments/assets/ec2493be-4219-4c17-b206-0a8bc527b475)
+
 
 4. **Pipes (`|`)**
    - Connected commands to filter/process output:
