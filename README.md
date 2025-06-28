@@ -103,3 +103,6 @@ The root has full administrative privileges and access to all files and commands
 
 # Example of using variable:
 ![image](https://github.com/user-attachments/assets/77d39b1f-ac93-4999-b6f2-7c92b60041d0)
+![image](https://github.com/user-attachments/assets/60a7d512-4c33-48e2-abc3-457ea029a3df)
+
+# Example of making table of a number:
