@@ -75,6 +75,7 @@ The root has full administrative privileges and access to all files and commands
      - `chmod 644 file` → read/write for owner, read-only for others
      - `chmod +x script.sh` → make a shell script executable
 
+
 2. **Shell Script Creation (`.sh` files)**
    - Created basic shell scripts using `nano`
    - Saved with `.sh` extension
