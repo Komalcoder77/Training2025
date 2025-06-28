@@ -74,6 +74,7 @@ The root has full administrative privileges and access to all files and commands
      - `chmod 444 file` → read-only for all users
      - `chmod 644 file` → read/write for owner, read-only for others
      - `chmod +x script.sh` → make a shell script executable
+![image](https://github.com/user-attachments/assets/c5f81011-3df5-4e77-97c2-10c1a05f9711)
 
 
 2. **Shell Script Creation (`.sh` files)**
