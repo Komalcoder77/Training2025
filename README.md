@@ -76,6 +76,7 @@ The root has full administrative privileges and access to all files and commands
      - `chmod +x script.sh` → make a shell script executable
 ![image](https://github.com/user-attachments/assets/c5f81011-3df5-4e77-97c2-10c1a05f9711)
 
+![image](https://github.com/user-attachments/assets/c1671d97-228f-4a92-9bdb-5c7406282a9c)
 
 2. **Shell Script Creation (`.sh` files)**
    - Created basic shell scripts using `nano`
