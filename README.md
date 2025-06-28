@@ -102,4 +102,4 @@ The root has full administrative privileges and access to all files and commands
 
 
 # Example of using variable:
-
+![image](https://github.com/user-attachments/assets/77d39b1f-ac93-4999-b6f2-7c92b60041d0)
