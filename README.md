@@ -111,3 +111,4 @@ The root has full administrative privileges and access to all files and commands
 ![image](https://github.com/user-attachments/assets/31c2524c-0979-42b4-b36c-260a95123fee)
 
 # Example of comparing two numbers:
+![image](https://github.com/user-attachments/assets/ff4dc72b-2fcf-46b7-8e83-c36111e9a466)
