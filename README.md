@@ -114,3 +114,152 @@ The root has full administrative privileges and access to all files and commands
 ![image](https://github.com/user-attachments/assets/ff4dc72b-2fcf-46b7-8e83-c36111e9a466)
 ![image](https://github.com/user-attachments/assets/f8b2805c-57e6-495b-af55-2cbef454f565)
 
+
+# 📘 Day 4 Training – Tech Basics
+
+---
+
+## 🔐 File Compression
+
+File compression in Linux is the process of reducing the size of files or folders to save disk space or make them easier to transfer.
+
+### 📌 Syntax
+
+```bash
+gzip file.txt
+# creates file.txt.gz and deletes file.txt
+
+gunzip file.txt.gz
+# unzips the file file.txt.gz
+
+gzip -k file.txt
+# keeps both file.txt and file.txt.gz
+```
+
+## 🃏 Wildcards
+
+Wildcards match files without typing their full names.
+
+| Wildcard | Description                                 | Example             | Matches                               |
+|----------|---------------------------------------------|---------------------|----------------------------------------|
+| `*`      | Matches zero or more characters              | `ls *.txt`          | All `.txt` files                       |
+| `?`      | Matches exactly one character                | `ls file?.txt`      | file1.txt, fileA.txt, etc.             |
+| `[1-3]`  | Matches any one character in the brackets    | `ls file[1-3].txt`  | file1.txt, file2.txt, file3.txt        |
+| `[^1]`   | Matches any one character NOT in the brackets| `ls file[^1].txt`   | All files except file1.txt             |
+| `{a,b}`  | Matches either a or b (brace expansion)      | `echo {Jan,Feb}`    | Prints: `Jan Feb`                      |
+| `\`      | Escapes a wildcard character                 | `ls \*.txt`         | Matches a file literally named `*.txt` |
+
+---
+
+## ✳️ Escaping Characters
+
+Escaping characters are used in the Linux command line (like Bash) to prevent special characters from being interpreted by the shell.
+
+> Escaping characters = telling the shell:  
+> “Treat this symbol as a normal character, not something special.”
+
+| Character | Purpose                                      | Example                      | Result                       |
+|-----------|----------------------------------------------|------------------------------|------------------------------|
+| `\`       | Escape special characters                    | `echo \*`                    | `*`                          |
+| `\"`      | Escape double quote inside double quotes     | `echo "She said \"Hi\""`     | She said "Hi"                |
+| `\'`      | Escape single quote (rare in single quotes)  | `echo 'It\'s OK'`            | May not work properly        |
+| `\\`      | Escape backslash                             | `echo \\`                    | `\`                          |
+| ``\` ``   | Escape backtick / command substitution       | `` `echo Hello` ``           | Hello                        |
+| `\$`      | Escape dollar sign (prevent expansion)       | `echo \$HOME`                | `$HOME`                      |
+| `\` inside `''` | No effect (literal backslash)         | `echo '\$HOME'`              | `\$HOME`                     |
+
+---
+
+## 🖥️ Hardware
+
+Hardware refers to the **physical components** of a computer that you can touch and see.
+
+| Category         | Examples                                 | Purpose                                      |
+|------------------|------------------------------------------|----------------------------------------------|
+| Input Devices     | Keyboard, Mouse, Microphone, Scanner     | Send data into the computer                  |
+| Output Devices    | Monitor, Printer, Speakers               | Display or deliver results                   |
+| Processing Unit   | CPU, GPU                                 | The "brain" – executes instructions          |
+| Storage Devices   | HDD, SSD, USB Drive, CD/DVD              | Store data permanently or temporarily        |
+| Memory            | RAM, Cache                               | Hold data temporarily for fast access        |
+| Motherboard       | —                                        | Connects all components                      |
+| Power Supply      | PSU                                      | Converts AC power into usable DC power       |
+| Cooling System    | Fans, Heat Sinks                         | Prevents components from overheating         |
+| Ports & Expansion | USB Ports, HDMI, PCIe                    | Connect external devices or add components   |
+
+---
+
+## 🧰 Key Components of CPU Cabinet
+
+| Component              | Description                                                          |
+|------------------------|----------------------------------------------------------------------|
+| Motherboard            | Main board that connects all hardware components                    |
+| CPU (Processor)        | Performs calculations and tasks                                      |
+| RAM (Memory)           | Temporary fast memory for active tasks                              |
+| Hard Drive / SSD       | Long-term storage for files and the OS                              |
+| Power Supply (PSU)     | Converts power from wall to usable DC power                         |
+| Cooling System         | Fans or liquid cooling to reduce heat                               |
+| Optical Drive (optional)| Reads CDs/DVDs (becoming obsolete)                                 |
+| Expansion Cards        | GPU, sound card, network card, etc.                                 |
+| Ports & Connectors     | USB, HDMI, Ethernet for device connection                           |
+| Cables & Wires         | Connect power and data between all components                       |
+
+---
+
+## 🧠 Difference Between RAM and Hard Disk
+
+| Feature         | RAM (Random Access Memory)              | Hard Disk (HDD/SSD)                 |
+|-----------------|------------------------------------------|--------------------------------------|
+| Function        | Temporary memory used while running apps | Permanent storage for files and OS   |
+| Data Storage    | Volatile (erased on shutdown)            | Non-volatile (data remains)          |
+| Speed           | Very fast                                | Slower                              |
+| Capacity        | 4GB to 32GB                              | 256GB to several TBs                |
+| Use             | Active programs and processes            | Documents, software, system files    |
+| Upgrade Benefit | Improves multitasking                    | Increases storage capacity           |
+
+---
+
+## ⚡ Difference Between RAM and Cache Memory
+
+| Feature        | RAM                             | Cache Memory                          |
+|----------------|----------------------------------|----------------------------------------|
+| Function       | Holds OS and program data        | Stores frequently used CPU data        |
+| Location       | On motherboard                   | Inside or close to CPU                 |
+| Speed          | Fast                             | Faster than RAM                        |
+| Size           | Larger (4–32GB)                  | Very small (KBs to a few MBs)          |
+| Access Time    | Slower than cache                | Extremely fast                         |
+| Volatility     | Volatile                         | Volatile                               |
+| Purpose        | Supports system & application use| Minimizes CPU wait time                |
+| Cost           | Cheaper per GB                   | More expensive per KB                  |
+
+---
+
+## 💾 ROM (Read-Only Memory)
+
+ROM stands for **Read-Only Memory** — a **non-volatile** type of memory used in computers.
+
+| Feature       | Description                                                    |
+|----------------|----------------------------------------------------------------|
+| Full Form      | Read-Only Memory                                               |
+| Volatility     | Non-volatile (retains data after shutdown)                    |
+| Function       | Stores firmware / startup instructions                        |
+| Write Access   | Usually read-only; rarely updated                             |
+| Speed          | Slower than RAM                                               |
+| Examples       | BIOS, UEFI, Embedded firmware                                 |
+
+---
+
+## ⚙️ Process of Booting
+
+The **booting process** is the sequence of steps a computer follows from power-on to running the OS.
+
+| Step | Component              | Description                                                  |
+|------|------------------------|--------------------------------------------------------------|
+| 1    | Power Supply (PSU)     | Activates system power when turned on                       |
+| 2    | Motherboard            | Supplies and distributes power to all components            |
+| 3    | CPU                    | Begins fetching instructions                                |
+| 4    | ROM (BIOS/UEFI)        | Runs POST (Power-On Self-Test)                              |
+| 5    | RAM                    | Checked and then used to load system files                  |
+| 6    | Storage Drive          | BIOS/UEFI locates bootloader in HDD/SSD                     |
+| 7    | Bootloader             | Loads OS from disk into RAM                                 |
+| 8    | Operating System       | Takes over and presents login or desktop screen             |
+
