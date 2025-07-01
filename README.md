@@ -263,3 +263,194 @@ The **booting process** is the sequence of steps a computer follows from power-o
 | 7    | Bootloader             | Loads OS from disk into RAM                                 |
 | 8    | Operating System       | Takes over and presents login or desktop screen             |
 
+# day - 5
+
+# 💽 Computer Hardware & Troubleshooting – Extended Notes
+
+---
+
+## 🗃️ What is HDD?
+
+HDD (Hard Disk Drive) is a non-volatile storage device that stores and retrieves digital data using magnetic storage. It contains spinning disks (platters) and read/write heads.
+
+### 🔑 Key Features
+- Long-term data storage
+- Uses magnetic platters and mechanical arms
+- Slower than SSDs
+- Large storage capacity at low cost
+
+### 🧩 Types of HDD
+
+| Type            | Description                                                      |
+|------------------|------------------------------------------------------------------|
+| PATA (IDE)       | Older standard, slow, now obsolete                               |
+| SATA             | Common in modern desktops/laptops                                |
+| SCSI             | Used in servers, supports multiple devices, high performance     |
+| SSHD             | Hybrid: SSD speed + HDD capacity                                 |
+| External HDD     | Portable, connects via USB                                       |
+| Enterprise HDD   | For servers/data centers, 24/7 operation                         |
+
+### 📏 HDD Form Factors
+
+| Form Factor | Usage             |
+|-------------|-------------------|
+| 3.5 inch    | Desktop computers |
+| 2.5 inch    | Laptops, compact PCs |
+
+> 💡 **Note:** SSD (Solid-State Drive) is not a type of HDD but serves the same purpose — storage. SSDs have no moving parts and are much faster.
+
+---
+
+## 🎮 GPU (Graphics Processing Unit)
+
+A specialized processor for rendering images, videos, animations, and visual content.
+
+### ⚠️ What Causes GPU Failure?
+
+| Cause            | Description                                          |
+|------------------|------------------------------------------------------|
+| Overheating      | Dust, fan failure, poor airflow                      |
+| Power Surges     | Electric surges or unstable PSU                      |
+| Driver Conflicts | Corrupt or outdated drivers                          |
+| Physical Damage  | Dropping or improper handling                        |
+| Age/Wear         | Heavy use over time causes degradation               |
+
+### 🛠️ What to Do When GPU Fails
+
+| Step                         | Action                                                              |
+|------------------------------|---------------------------------------------------------------------|
+| Check Connections            | Reseat GPU, check cables                                            |
+| Clean the Card               | Remove dust, clean fans                                             |
+| Switch to Integrated Graphics| Remove GPU, use onboard graphics                                    |
+| Try GPU on Another PC        | Test card on a different system                                     |
+| Stress Test                  | Use FurMark / GPU-Z to monitor temp & performance                   |
+| Reinstall Drivers            | Use DDU to clean old drivers, install fresh ones                    |
+| Check Temperature            | Use MSI Afterburner or similar tools                                |
+
+> 🔧 **If GPU is dead:**  
+- If under warranty: Contact manufacturer  
+- If not: Replacement is recommended unless minor (e.g., fan) issue
+
+---
+
+## 🔌 PSU (Power Supply Unit)
+
+### ⚠️ Symptoms of PSU Issues
+- PC won’t power on
+- Random shutdowns or reboots
+- Burning smell or electrical noise
+- Flickering lights or fans
+
+### 🔎 Diagnosis Steps
+
+| Method                    | How To Do It                                                  |
+|---------------------------|---------------------------------------------------------------|
+| Check Power Cable/Outlet  | Test with a known working cable/outlet                        |
+| Paperclip Test (ATX PSU)  | Short green & black wires on 24-pin connector                 |
+| Multimeter Test           | Check 12V, 5V, 3.3V rails                                      |
+| Try Another PSU           | Swap with working PSU to confirm                              |
+
+> ⚠️ **Safety Tips:**
+- Always unplug the PC before opening
+- Ground yourself
+- Don’t repair PSU unless professionally trained
+
+---
+
+## 🐌 PC Running Slow – Causes & Fixes
+
+| Issue                    | Explanation                                      | Fix/Solution                                                   |
+|--------------------------|--------------------------------------------------|----------------------------------------------------------------|
+| Too Many Startup Apps    | Slows boot time                                  | `Ctrl + Shift + Esc → Startup → Disable unnecessary apps`      |
+| Low RAM                  | Can’t multitask well                             | Upgrade RAM to 8GB+                                            |
+| Fragmented HDD           | File access delays (HDD only)                    | Run Disk Defragmenter                                          |
+| Old/Faulty HDD           | Degrading speed                                  | Replace with SSD                                               |
+| Background Processes     | Resource hogging apps                            | End unnecessary processes from Task Manager                    |
+| Virus/Malware            | System lag & damage                              | Scan with antivirus                                            |
+| Outdated Drivers         | Causes lag or crashes                            | Update from Device Manager or manufacturer site                |
+| Overheating              | Thermal throttling slows system                  | Clean fans, apply thermal paste                                |
+| Too Many Browser Tabs    | High RAM usage                                   | Close tabs, use light browsers                                 |
+| Background Updates       | Slows performance                                | Let updates finish or pause                                    |
+| Weak CPU                 | Can’t handle new apps                            | Upgrade processor (if possible)                                |
+
+---
+
+## 🖨️ Common Printer Problems & Solutions
+
+| Issue                | Cause                              | Solution                                      |
+|----------------------|------------------------------------|-----------------------------------------------|
+| Not Printing         | Loose cable / offline / driver     | Check connections; update driver              |
+| Printer Offline      | Manual setting or network issue    | Set printer online in settings                |
+| Paper Jam            | Misaligned or stuck paper          | Carefully remove paper & debris               |
+| Low Ink              | Empty or clogged cartridge         | Replace/refill cartridge; clean printhead     |
+| Poor Print Quality   | Dirty nozzle / wrong settings      | Run nozzle cleaning tool                      |
+
+---
+
+## 🧨 BSOD (Blue Screen of Death)
+
+BSOD is a critical Windows error screen caused by system crashes.
+
+### 💥 What Causes BSOD?
+
+| Cause                  | Explanation                                             |
+|------------------------|---------------------------------------------------------|
+| Faulty Drivers         | Incompatible or corrupt                                 |
+| Hardware Failure       | RAM, GPU, HDD issues                                    |
+| Corrupt System Files   | Damaged Windows components                              |
+| Malware                | Can corrupt system processes                            |
+| Update Issues          | Failed or incomplete Windows updates                    |
+| Overclocking/BIOS      | Unstable configuration                                  |
+
+### 🛠️ Crash Analysis Tools
+- **Event Viewer** – View system logs
+- **WinDbg** – Analyze crash dump files
+
+---
+
+## 🧬 BIOS/UEFI & POST
+
+| Term     | Description                                                                 |
+|----------|-----------------------------------------------------------------------------|
+| BIOS     | Traditional firmware for booting                                            |
+| UEFI     | Modern firmware with faster boot, graphical UI, mouse support               |
+
+### 🔧 Common BIOS Settings
+
+| Setting         | Description                                             |
+|------------------|--------------------------------------------------------|
+| Boot Order       | Choose drive to boot from                              |
+| Secure Boot      | Protects against unauthorized OS                       |
+| XMP Profile      | Enables RAM to run at full speed                       |
+| Fan Control      | Adjust fan speed                                       |
+| Virtualization   | Enables VM support                                     |
+| SATA Mode        | Switch between AHCI/IDE for SSDs/HDDs                  |
+
+---
+
+## 🧪 What is POST?
+
+POST = Power-On Self-Test  
+It checks hardware before booting OS.
+
+### 🚨 Common POST Errors
+
+| Error               | Cause                        | Fix                                   |
+|---------------------|------------------------------|----------------------------------------|
+| No Display / Beeps  | RAM not detected             | Reseat or change RAM                  |
+| Continuous Beeps    | GPU or CPU issue             | Recheck installation or replace       |
+| No Beep / No Boot   | PSU or motherboard failure   | Test with another PSU                 |
+| CMOS Error          | Dead CMOS battery            | Replace battery (CR2032)              |
+| Boot Device Missing | Drive not found              | Reconnect drive, check boot order     |
+| Overclock Failed    | Unsafe BIOS settings         | Reset BIOS to default                 |
+
+---
+
+### ⚙️ Accessing and Resetting BIOS
+
+| Action             | Steps                                      |
+|--------------------|---------------------------------------------|
+| Access BIOS        | Press `Del`, `F2`, or `Esc` during startup |
+| Reset BIOS         | Select “Load Setup Defaults” or remove CMOS battery |
+| Update BIOS        | Download from motherboard website          |
+
