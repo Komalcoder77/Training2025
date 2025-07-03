@@ -454,387 +454,252 @@ It checks hardware before booting OS.
 | Reset BIOS         | Select “Load Setup Defaults” or remove CMOS battery |
 | Update BIOS        | Download from motherboard website          |
 
-# Day - 6
-# Safe Mode
-Safe Mode is a diagnostic mode in an operating system that starts the system with only essential files and drivers. It helps in fixing problems like software errors, driver conflicts, or malware.
+# 📘 Day 6: System Recovery, Backup & Network Tools
 
-### Types :
+---
 
-**1. Safe Mode –** Starts with basic drivers only.
+## 🛠 Safe Mode
 
-**2. Safe Mode with Networking –** Includes internet/network drivers.
+Safe Mode boots the system with minimal drivers and services. It's primarily used for fixing critical errors caused by faulty drivers, updates, or malware.
 
-**3. Safe Mode with Command Prompt –** Opens Command Prompt instead of the normal desktop.
+### Types of Safe Mode:
 
-# Recovery Tools
-Recovery tools are built-in or external tools used to troubleshoot, fix, or restore the system to a previous or working state.
+- **Basic Safe Mode:** Starts with essential drivers and services only.
+- **Safe Mode with Networking:** Adds network/internet drivers.
+- **Safe Mode with Command Prompt:** Launches the system with only Command Prompt for advanced troubleshooting.
+
+---
+
+## 🔧 Recovery Tools in Windows
+
+Recovery tools help you restore your system to a stable state without needing a complete reinstall.
+
+### Key Tools:
+
+- **System Restore:** Reverts system settings to a saved point.
+- **Startup Repair:** Scans and fixes boot-related errors.
+- **Reset This PC:** Fresh install with an option to keep or remove personal files.
+- **Recovery Drive:** USB tool for offline troubleshooting and reinstallation.
+
+---
+
+## 🧩 Operating System Repair
+
+Instead of reinstalling the OS, some tools allow system file repair:
+
+- `sfc /scannow`: Scans and restores corrupt system files.
+- `DISM /Online /Cleanup-Image /RestoreHealth`: Repairs Windows system image.
+- Bootable USB: Used to repair or reinstall the OS.
+
+---
+
+## 🦠 Signs of Virus/Malware Infections
+
+- Unusual slowness
+- Sudden pop-up ads
+- Unknown programs appearing
+- Browser redirection
+- Apps crashing frequently
+
+---
+
+## 🔐 Virus & Malware Removal Methods
+
+- **Safe Mode Scan:** Run antivirus in a low-risk environment.
+- **Antivirus Programs:** Detect and remove malicious files.
+- **Malware Removal Tools:** Tools like Malwarebytes or AdwCleaner.
+- **Manual Deletion:** Delete suspicious apps/files (advanced).
+- **Reset PC:** Use as a last resort for deep infections.
+
+---
+
+## 💾 Methods for Backing Up Windows
+
+1. **File History:** Auto-backup of personal files to external storage.
+2. **Backup and Restore (Win7):** Create system image or schedule backups.
+3. **System Image Backup:** Full snapshot of your OS and settings.
+4. **OneDrive:** Cloud-based backup of common folders.
+5. **Manual Backup:** Copy essential data to USB/External HDD.
+6. **Third-Party Tools:** Apps like Acronis, EaseUS for scheduled backups.
+
+---
+
+## 🔌 RJ45 Cable
+
+RJ45 connectors are standard for Ethernet-based network connections.
+
+### RJ-45 Cable Making (T568B Standard):
+
+| Pin | Color            | Use        |
+|-----|------------------|------------|
+| 1   | White-Orange     | Transmit   |
+| 2   | Orange           | Transmit   |
+| 3   | White-Green      | Receive    |
+| 4   | Blue             | Unused     |
+| 5   | White-Blue       | Unused     |
+| 6   | Green            | Receive    |
+| 7   | White-Brown      | Unused     |
+| 8   | Brown            | Unused     |
+
+**Steps:**
+1. Strip ~1 inch of the outer cover.
+2. Untwist and arrange wires.
+3. Align as per T568B.
+4. Trim wires evenly.
+5. Insert into connector.
+6. Crimp with tool.
+7. Test the cable.
+
+---
+
+# 📘 Day 7: Networking Fundamentals
+
+---
+
+## 💻 Hosts in a Network
+
+A **host** is any device that communicates over a network — like computers, mobile phones, printers, IP cameras, or smart appliances.
+
+---
+
+## 🌐 Network Definition
+
+A **network** is a group of interconnected devices for sharing data and resources (e.g., files, internet, printers).
+
+### Key Features:
+
+- File/data exchange
+- Centralized control
+- Remote access
+- Shared resources
+
+---
+
+## 📍 IP Address Basics
+
+An **IP Address** is a unique identifier for a device on a network.
 
 ### Types:
 
-**System Restore –** Rolls back the system to a previous restore point.
+- **Public IP:** Provided by ISP, globally reachable.
+- **Private IP:** Used within local networks, not routable online.
 
-**Startup Repair –** Fixes boot-related issues.
+### Properties:
 
-**Reset This PC –** Reinstalls Windows (with or without keeping files).
+- **Unique:** No IP duplication allowed in the same network.
+- **Universal:** Same structure used globally.
 
-**Recovery Drive or Disk –** External drive used to access recovery options.
+---
 
-# OS Repair (Operating System Repair)
-OS Repair refers to methods used to fix corrupted or missing system files without completely reinstalling the operating system.
+## 📊 IPv4 vs IPv6
 
-Use repair commands:
+| Feature         | IPv4                   | IPv6                           |
+|-----------------|------------------------|--------------------------------|
+| Length          | 32-bit                 | 128-bit                        |
+| Format          | Decimal (e.g., 192.168.0.1) | Hexadecimal (e.g., 2001:0db8::1) |
+| Address Space   | ~4.3 billion           | ~340 undecillion               |
+| Notation        | 4 Octets               | 8 groups, 4 hex digits each    |
 
-sfc /scannow – Scans and restores system files.
-DISM /Online /Cleanup-Image /RestoreHealth – Repairs corrupted Windows images.
-Bootable USB for repair and system reinstall.
+---
 
-# Virus and Malware Symptoms
+## 🧮 IP Address Representation
 
-* Slow performance
-* Frequent pop-ups
-* Programs crashing
-* Unknown apps installed
-* Browser redirecting to strange websites
+- **Binary Notation:** Used internally by computers.
+- **Dotted Decimal:** Used by humans. e.g., `192.168.0.1`
 
-# Basic Virus/Malware Removal
+---
 
-**Using Safe Mode –** Run antivirus in safe environment.
+## 🏷 Classful Addressing (IPv4)
 
-**Using Antivirus Software –** Scan and delete threats.
+| Class | Range       | Network/Host Bits | Hosts per Network | Usage                 |
+|-------|-------------|-------------------|-------------------|------------------------|
+| A     | 1–126       | 8N / 24H           | ~16 million       | Huge networks          |
+| B     | 128–191     | 16N / 16H          | ~65K              | Medium-sized networks  |
+| C     | 192–223     | 24N / 8H           | 254               | Small networks         |
+| D     | 224–239     | N/A                | Multicast only    | Multicast communication|
+| E     | 240–255     | Reserved           | N/A               | Research               |
 
-**Using Malware Removal Tools –** Like Malwarebytes, AdwCleaner.
+---
 
-**Manual Removal –** Deleting infected files and apps.
+## 🔁 Communication Types
 
-**Resetting System –** Reinstall OS if damage is severe.
+| Type     | Sender | Receiver(s)     | Use Case                          |
+|----------|--------|-----------------|-----------------------------------|
+| Unicast  | 1      | 1               | Web browsing, email               |
+| Broadcast| 1      | All on network  | DHCP, ARP                         |
+| Multicast| 1+     | Selected Group  | Video streaming, stock updates    |
 
-# Ways to back up Windows:
+---
 
-**1. File History -** Backs up personal files (Documents, Pictures, etc.) to an external drive automatically.
+## 🔢 Subnetting Essentials
 
-**2. Backup and Restore (Windows 7) -** Creates regular backups or a full system image. Still available in newer Windows versions.
+**Subnetting** breaks a large network into smaller, efficient sub-networks to reduce congestion and boost performance.
 
-**3. System Image Backup -** Makes a complete copy of your system, including OS and settings. Useful for full recovery.
+- **Bandwidth:** Data transfer rate (↑ better)
+- **Latency:** Delay in communication (↓ better)
+- **Network IP:** First address in a subnet
+- **Broadcast IP:** Last address (reserved)
 
-**4. OneDrive (Cloud Backup) -** Backs up important folders (Desktop, Documents, Pictures) to the cloud.
+---
 
-**5. Manual Backup -** Copy important files manually to an external hard drive or USB.
+## 🧮 Subnet Mask
 
-**6. Third-Party Backup Tools -** Use software like Acronis, Macrium Reflect, or EaseUS for full or scheduled backups.
+Used to distinguish between network and host portions of an IP.
 
-# RJ45 (Registered Jack 45) :
-RJ45 is a standard connector used to connect computers and networking devices like routers and switches using Ethernet cables.
+**Example:**
+IP: 192.168.1.10  
+Mask: 255.255.255.0 → First 3 octets for network
 
-### Key Points about RJ45:
+---
 
-# How to Make a RJ‐45 Cable:
-1. Strip the cable to remove 1 inch of the outer sheath.
-2. Untwist and straighten the wires inside of the cable
-3. Arrange the wires into the right order as following.
+## 🆔 MAC Address
 
-|Pin| Number	Wire Color (T568B)	|
-|---|---------------------------|
-|1|	White Orange	|
-|2|	Orange	Transmit| 
-|3|	White Green	Receive| 
-|4|	Blue	Unused |
-|5|	White Blue	Unused |
-|6|	Green	Receive |
-|7|	White Brown	Unused |
-|8|	Brown|
+A **MAC Address** is a permanent, physical ID assigned to a device by its manufacturer. It's used locally, unlike IP addresses which are logical and changeable.
 
-![image](https://github.com/user-attachments/assets/08b500e9-2e5c-4696-9c11-00a7df39b5d0)
+---
 
-4. Trim the wires into an even line 1⁄2 inch (13 mm) from sheathing
-5. Insert the wires into the RJ-45 connector.
-6. Stick the connector into the crimping part of the tool and squeeze twice.
-7. Remove the cable from the tool and check that all of the pins are down & test the cable.
+## 🌍 DNS - Domain Name System
 
-# Day -7
-# Networking  Basics
-### Hosts :
-A host refers to any device that connects to a network and is capable of sending or receiving data. This includes:
+DNS converts human-readable web addresses like `www.google.com` into machine-readable IPs like `142.250.77.238`.
 
-* Computers (Desktops, Laptops)
+---
 
-* Servers
+## 🛤 Default Gateway
 
-* Smartphones
+The **default gateway** is your device’s door to the external network (usually your router).
 
-* Printers
+---
 
-* IP cameras
+## 🔢 CIDR - Classless Inter-Domain Routing
 
-* IoT devices (like smart TVs, smart bulbs, etc.)
+CIDR allows flexible subnetting using notation like `/24`, replacing rigid classes.
 
-![host](https://github.com/user-attachments/assets/1beb5235-156d-475e-ac26-dc22f161f254)
+---
 
-# Network :
-A network is a group of two or more connected devices (like computers, servers, or mobile phones) that are linked together to share resources, exchange data, and communicate with each other. These devices are connected using wired (like Ethernet cables) or wireless (like Wi-Fi) communication methods.
+## 📡 Types of Network Cables
 
-**Key Features:**
-Data sharing (files, messages)
+- **Twisted Pair (UTP/STP):** Common in LANs
+- **Coaxial:** Used in older networks, TV
+- **Fiber Optic:** Fastest; used for long-distance data
 
-Resource sharing (printers, internet)
+---
 
-Communication (email, video calls)
+## 🧠 Numerical Example:
 
-Centralized or distributed control
+**Given:** `205.150.65.0/26`
 
-# IP Address:
-An IP address (Internet Protocol address) is a unique number assigned to each device connected to a network. It helps in identifying and locating devices so they can communicate with each other over the internet or a local network.
+1. **Subnet Mask:**  
+   26 bits → 255.255.255.192
 
-### Types of IP Addresses
-**1. Public IP Address :** Assigned to your network by your Internet Service Provider (ISP), allowing devices within your network to communicate with the internet.
+2. **Subnets Possible:**  
+   /26 from Class C (/24) → 2 bits → `2² = 4`
 
-**2.Private IP Address :** Used within a private network (e.g., home or office) and not routable over the internet. Devices within the same local network communicate using private IPs.
+3. **Hosts per Subnet:**  
+   32 - 26 = 6 bits → `2⁶ - 2 = 62`
 
-### Properties of an IP Address:
-**1. Unique**
-* Every IP address must be unique within a network.
+4. **Network IP:**  
+   First Subnet starts at → `205.150.65.0`
 
-* This means no two devices on the same network can have the same IP address.
+5. **Broadcast IP:**  
+   First Subnet ends at → `205.150.65.63`
 
-* If two devices have the same IP, it leads to IP address conflicts, and communication may fail.
-
-* Example: If your laptop has the IP 192.168.1.10, no other device in that network can use the same address at the same time.
-
-**2. Universal**
-* IP addresses follow a universal standard that is understood worldwide.
-
-* No matter where you are, IP addresses follow the same format (IPv4 or IPv6).
-
-* This allows devices from different parts of the world to communicate with each other over the internet.
-
-* It ensures global connectivity and compatibility between networks and devices.
-
-### IPv4 (Internet Protocol Version 4):
-**Address Length:**
-
-* IPv4 uses a 32-bit address format.
-
-* This means the IP address is made up of 32 binary digits (0s and 1s).
-
-**Notation:**
-
-* IPv4 addresses are written in decimal format.
-
-* The 32 bits are divided into 4 groups, called octets.
-
-* Each octet is separated by a dot (.).
-
-* Each octet can range from 0 to 255.
-
-* Example: 192.168.1.1.
-
-**Address Space:**
-
-* Since IPv4 uses 32 bits, it can have 2³² = 4,294,967,296 unique addresses.
-
-* This gives approximately 4.3 billion possible IP addresses.
-
-* Due to the large number of internet-connected devices, this space is becoming exhausted.
-
-### IPv6 Explanation in Points
-**Address Length:**
-
-* IPv6 uses a 128-bit address format.
-
-* This means each IP address is made up of 128 binary digits (0s and 1s).
-
-* It provides a much larger range than IPv4.
-
-**Notation:**
-
-* IPv6 addresses are written in hexadecimal format.
-
-* The 128 bits are divided into 8 groups, each containing 4 hexadecimal digits.
-
-* Groups are separated by colons (:).
-
-* Example: 2001:0db8:85a3:0000:0000:8a2e:0370:7334
-
-**Address Space:**
-
-* IPv6 provides 2¹²⁸ = 340 undecillion unique addresses.
-
-* This is enough to assign trillions of addresses to every person or device on Earth.
-
-* The huge space ensures scalability for the future internet.
-
-### IPv4 vs IPv6:
-
-|Feature|	IPv4|	IPv6|
-|-------|-----|-----|
-|Address Length|	32 bits (4 octets)|	128 bits (16 octets)|
-|Address Format|	Decimal (e.g., 192.168.1.1)|	Hexadecimal (e.g., 2001:0db8::1)|
-|Address Space|	~4.3 billion addresses|	~340 undecillion addresses|
-|Configuration|	Manual or DHCP|	Auto-configuration (SLAAC) or DHCPv6|
-
-![IP](https://github.com/user-attachments/assets/693b218c-c492-4a09-9aef-d6f8d4343d47)
-
-# Notation:
-### Binary Notation (used internally in networking)
-* In binary notation, an IP address is written in binary (base-2) numbers — using only 0s and 1s.
-
-* IPv4 addresses are made up of 32 bits, which are grouped into 4 sets of 8 bits (called octets).
-
-* Computers use this format to understand and process IP addresses.
-
-* Example:
-Binary: 11000000.10101000.00000001.00000001
-This represents the IP address in binary form.
-
-### 2. Dotted Decimal Notation (used by humans)
-* In dotted decimal notation, the 32-bit binary address is converted into 4 decimal numbers.
-
-* Each 8-bit binary group (octet) is converted to a number between 0 and 255.
-
-* The four decimal numbers are separated by dots (.).
-
-* This is the standard readable format for IPv4 addresses.
-
-* Example:
-Binary:      11000000.10101000.00000001.00000001  
-Decimal:     192      .168      .1        .1  
-IPv4 Address: 192.168.1.1
-
-# Classful Addressing in IP (IPv4)
-Classful addressing is a system used in IPv4 to divide the IP address space into five classes (A to E) based on the first few bits of the IP address. Each class has a different range, size of network and host portions, and specific use.
-
-This method helps in identifying how much of the IP address is used for the network part and how much is used for the host part.
-
-### Structure of IPv4 Address:
-* IPv4 address = 32 bits
-
-* Divided into network part and host part (depending on the class)
-
-**IP Address Classes:**  
-|Class|	Starting Bits|	Range of First Octet|	Network/Host Bits	|No. of Hosts	Use|
-|-----|--------------|---------------------|-------------------|----------------|
-|A|	0xxxxxxx|	1 – 126|	8 bits (N) / 24 bits (H)|	~16 million per network	Large networks|
-|B|	10xxxxxx|	128 – 191|	16 bits (N) / 16 bits (H)|	~65,000 per network	Medium-sized networks|
-|C|	110xxxxx|	192 – 223|	24 bits (N) / 8 bits (H)|	254 hosts per network	Small networks|
-|D|	1110xxxx|	224 – 239|	Not divided (multicast)|	Not for host addressing	Multicast communication|
-|E|	1111xxxx|	240 – 255|	Reserved	Not used for devices|	Research & Experimental use|
-
- **Key Points of Classful Addressing:**
-* Divides IP addresses into fixed classes (A–E).
-
-* Helps in identifying the size of the network.
-
-* Simple but wastes IP addresses (not efficient).
-
-* Replaced by Classless Addressing (CIDR) for better IP utilization.
-
-![462012671-628b0cc6-8c90-454d-bccd-ac12a5129733](https://github.com/user-attachments/assets/b3f6a8cc-aad9-4817-8579-827996df669d)
-
-# Broadcast vs. Multicast vs. Unicast :
-
-|Parameters|	Unicast|	Broadcast|	Multicast|
-|----------|--------|----------|----------|
-|Basics|	There is only one receiver and one sender.|	There are multiple receivers and one sender.|	There are multiple receivers and multiple senders.|
-|Meaning and Definition|	Unicast is used to transfer data from a single sender to a single recipient.|	Broadcast sends data from one sender to all devices on a network.|	Multicast sends data from one or more senders to a selected group of receivers.|
-|Mapping|	One-to-one type of communication.|	One-to-many type of communication.|	Many-to-many type of communication.|
-|Uses|	Used for direct communication like web browsing, emails, etc.|	Used in TV/radio networks, ARP, DHCP discovery, etc.|	Used in stock exchanges, live video streaming, multimedia delivery.|
-
-# Subnetting:
-Subnetting is the process of dividing a large IP network into smaller, manageable sub-networks called subnets. It helps in efficient use of IP addresses, reduces network traffic, and improves security by isolating different parts of a network.
-or 
-Dividing a large network into smaller, more manageable sub-networks. It helps to utilize the network bandwidth in more intelligent way.
-
-* Bandwidth: Capacity of network; data transmission rate (e.g., Mbps). Should be maximum.
-
-* Latency: Delay in data transmission. Should be minimum.
-
-* Host Bits: Denoted by '0's in subnet mask.
-
-* Network IP: First IP of a subnet (cannot be assigned to host).
-
-* Broadcast IP: Last IP of a subnet (cannot be assigned to host).
-
-![image](https://github.com/user-attachments/assets/3dae5fc9-981f-4c78-b36a-b41a616dffcb)
-
-### Subnet Mask :
-A subnet mask is a 32-bit number used to separate the network part and the host part of an IP address. It helps identify which portion of the IP address refers to the network and which part refers to the host within that network.
-
-* Example:
-For IP 192.168.1.10 and subnet mask 255.255.255.0,
-
-255.255.255.0 means the first 3 octets are the network part,
-
-The last octet is for hosts.
-### MAC (Media Access Control Address):
-
-**Nature:** A unique, 12-character hexadecimal (alphanumeric) attribute used to identify individual electronic devices on a network.
-Distinction from IP Address:
-**MAC Address:** Identifies the physical location of a device within a local network. It's like your permanent home address. The manufacturer provides it.
-**IP Address:** Signifies the device's global or internet-accessible identity. It's more like a temporary vacation rental address, changing depending on your network connection.
-
-### DNS (Domain Name System):
-It is a naming system for computers, service etc connected to the Internet or a private network. It translates domain names (www.google.com) into machine-readable IP addresses (172.217.160.142).
-
-**Default Gateway:**
-Its a device (typically a router) that acts as a pathway for data to leave a local network and reach other networks, including the internet.
-
-### CIDR (Classless Inter-Domain Routing):
-Modern method for IP allocation and routing, replacing classful addressing with more flexible network sizing (e.g., /24).
-**Types of Cables**
-**Twisted Pair:**
-Types: Shielded (STP) and Unshielded (UTP).
-Use: LANs (Ethernet).
-**Coaxial:**
-Use: TV networks, older computer networks.
-**Fiber-Optic:**
-Use: High-speed networks, long distances (most commonly used today).
-
-# Numerical:
-
-For 205.150.65.0/26. Find:
-Subset mask
-Number of subsets
-Number of hosts
-Network IP
-Broadcast IP.
-
-**Solution:**
-1. Subnet Mask
-/26 means 26 bits are used for the network portion.
-
-So, the subnet mask in decimal is:
-
-Copy
-Edit
-11111111.11111111.11111111.11000000 → 255.255.255.192
-Subnet Mask = 255.255.255.192
-
-2. Number of Subnets
-Given: It's from Class C (default /24), and we're using /26
-
-Subnet bits = 26 - 24 = 2 bits
-
-Number of subnets = 2² = 4
-
-Number of Subnets = 4
-
-3. Number of Hosts per Subnet
-Host bits = 32 - 26 = 6 bits
-
-Number of hosts = 2⁶ - 2 = 64 - 2 = 62
-(Subtract 2 for Network & Broadcast addresses)
-
-Number of Hosts = 62 per subnet
-
-4. Network IP (of first subnet)
-Subnet range = 2⁶ = 64 IPs per subnet
-
-First subnet starts at:
-
-Network IP = 205.150.65.0
-
-5. Broadcast IP (of first subnet)
-Broadcast = Last IP of the subnet
-
-First subnet = 205.150.65.0 – 205.150.65.63
-
-Broadcast IP = 205.150.65.63
