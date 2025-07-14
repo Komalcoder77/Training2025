@@ -819,3 +819,242 @@ ping google.com
     <p>This is a paragraph.</p>
   </body>
 </html>
+
+# 🌐 Training Day: 10
+
+## ✅ Introduction to HTML & Web Basics
+
+---
+
+### ✅ What is HTML?
+
+**HTML (HyperText Markup Language)** is the standard language used to create web pages.  
+It structures content using **tags** that the **browser** can interpret and display.
+
+---
+
+## 🔖 Common HTML Tags
+
+### 1. Headings (`<h1>` to `<h6>`)
+
+- Used to define **titles** and **subheadings**.
+- `<h1>` is the **largest**, `<h6>` is the **smallest**.
+
+```html
+<h1>Main Title</h1>
+<h2>Subheading</h2>
+<p>This is a paragraph of text.</p>
+<ul>
+  <li>Apple</li>
+  <li>Banana</li>
+</ul>
+<ol>
+  <li>First Step</li>
+  <li>Second Step</li>
+</ol>
+<a href="https://www.google.com">Visit Google</a>
+<img src="image.jpg" alt="Description of image">
+
+# Day-11
+
+# Common Input Types
+
+HTML input fields are created using the <input> tag.
+
+|Input Type	|Purpose|	Example Code|
+|-----------|-------|-------------|
+|text|	Single-line text input|	<input type="text" name="username">|
+|password|	Hides typed characters|	<input type="password" name="pass">|
+|email|	Accepts only email format	|<input type="email" name="email">|
+|number|	Numeric input only	|<input type="number" name="age">|
+|date|	Date picker	|<input type="date" name="dob">|
+|radio|	Choose one option from a group|	<input type="radio" name="gender">|
+|checkbox|	Multiple selections	|<input type="checkbox" name="hobby">|
+|submit|	Button to submit form	|<input type="submit" value="Submit">|
+|reset|	Clears all inputs	|<input type="reset">|
+|file|	Upload file	|<input type="file" name="upload">|
+|tel|	Telephone number input	|<input type="tel" name="phone">|
+|url| Website address	|<input type="url" name="website">|
+|color|	Pick a color	|<input type="color" name="favcolor">|
+|range|	Slider control	|<input type="range" min="1" max="10">|
+
+# Example of HTML Form:
+
+<img width="558" height="361" alt="image" src="https://github.com/user-attachments/assets/a6ce9721-35d6-480a-86ba-b80e6f3c5441" />
+<img width="360" height="238" alt="image" src="https://github.com/user-attachments/assets/1d14d364-778c-4a3d-8d4f-0fb460c231be" />
+
+# Semantic HTML
+Semantic HTML refers to the use of HTML5 tags that clearly describe the purpose and meaning of the content. It helps in accessibility, SEO, and code readability.
+**Common Semantic Tags**
+|Tag	|Purpose|
+|----|-------|
+|header|	Top section of page (logo, nav, title, etc.)|
+|footer	Bottom section of page (copyright, links)|
+|nav|	Navigation links to other pages|
+|section|	A thematic grouping of content|
+|article|	Self-contained content (e.g., blog post, news item)|
+# Example of Sementic HTML:
+<img width="613" height="481" alt="image" src="https://github.com/user-attachments/assets/05bb47dc-0f15-49c5-bcac-2c6fb6970afc" />
+<img width="444" height="323" alt="image" src="https://github.com/user-attachments/assets/c0059037-d33d-4613-ae8d-83a14415a66d" />
+
+
+# Day-12
+# CSS Styling: Inline, Internal & External
+### What is CSS?
+CSS stands for Cascading Style Sheets. It's a language that lets you control the visual appearance of HTML content — things like layout, colors, fonts, spacing, and more.
+
+You can add CSS to your web page in three main ways:
+
+### 1. Inline CSS
+This method places the CSS directly inside an HTML tag using the style attribute.
+
+It's best used for quick changes or testing small tweaks.
+
+**Example:**
+
+<p style="color: green; font-size: 18px;">This text is styled using inline CSS.</p>
+### 2. Internal CSS
+In this approach, the CSS code is written inside a <style> tag, which is placed within the <head> section of your HTML file.
+
+It's useful when you're working on just one page and want all styles to stay within that same file.
+
+**Example:**
+
+<head>
+  <style>
+    body {
+      background-color: #f0fff0;
+      font-family: Arial;
+    }
+    h1 {
+      color: darkgreen;
+    }
+  </style>
+</head>
+
+### 3. External CSS
+This method keeps your CSS in a separate file (with a .css extension) and links it to your HTML page using the <link> tag.
+
+It's the most organized and reusable method, especially when you're working on a multi-page website.
+
+HTML File:
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+styles.css File:
+
+css
+Copy
+Edit
+body {
+  background-color: #e6ffe6;
+  font-family: Verdana;
+}
+h1 {
+  color: seagreen;
+  text-align: center;
+}
+# Quick Comparison
+|Feature|	Inline CSS|	Internal CSS|	External CSS
+|-------|-----------|-------------|------------|
+|Where it's written|	Inside the HTML tag|	In <style> within <head>|	In a separate .css file|
+|Applies to	|Just one element	|One full HTML page	|Multiple pages|
+|Can be reused?| Not reusable| Somewhat reusable| Highly reusable|
+|Best for|	Quick edits or testing|	Small projects or one-pagers|	Full websites or large projects|
+
+# Day-13
+
+# What is Git and Why Use Version Control?
+Git is a distributed version control system used to track changes in source code during software development.It helps manage code across multiple versions, developers, and updates.
+
+### Why Use Version Control?
+1. Tracks Your Work
+2. Collaboration Made Easy
+3. Backup and Safety
+4.  Branching and Experimenting
+5.  Open Source and Free
+
+### Git Architecture:
+ ### 1. Repository (Repo)
+A storage location where Git tracks all changes made to your files over time.
+
+Can be:
+
+Local – stored on your own computer
+
+Remote – hosted on platforms like GitHub, GitLab, or Bitbucket
+
+### 2. Working Tree (or Working Directory)
+The actual files and folders you're working with on your system right now.
+
+It reflects the current version of your project
+
+You make your changes here before saving them permanently with Git
+
+### 3. Index (Staging Area)
+A middle layer where you place files before committing them to the repository.
+
+You use git add to move changes here
+
+It gives you control over what goes into the next commit
+
+Think of it as a review area before saving
+
+<img width="692" height="454" alt="image" src="https://github.com/user-attachments/assets/7ab5537f-2f02-4948-9554-6ec21210f08a" />
+
+
+# How to Use Git (Using Command Line)
+# Step 1: Create or Clone a Repository
+First, get the repository link (usually ends with .git) from GitHub
+
+Open Git Bash (or terminal)
+
+Run this command to clone the repository:
+
+Move into the project folder:
+<img width="633" height="612" alt="image" src="https://github.com/user-attachments/assets/b9571563-31ad-4d93-a3bd-dafbbbd9350d" />
+<img width="735" height="374" alt="image" src="https://github.com/user-attachments/assets/b3d3479d-d39e-4963-836b-482f314d47bc" />
+
+(Optional) Check the files using ls
+
+# Step 2: Check Git Status
+Use this to see changes or file status:
+<img width="1118" height="280" alt="image" src="https://github.com/user-attachments/assets/f3177e01-249b-4ec5-9e7b-ba9cefc87e52" />
+
+If it says "Up to date", everything is in sync
+
+# Step 3: Create and Edit a New File
+Create a new HTML file:
+
+Open and write your code in it:
+
+
+Save the file after editing (in Nano, press Ctrl + O, then Enter, then Ctrl + X to exit)
+
+# Step 4: Add the File to Staging Area
+Stage the file for commit:
+
+**Warning:**
+If you see a message like:
+**warning:** in the working copy of 'index.html', LF will be replaced by CRLF
+→ It means Git will convert line endings to match Windows (CRLF). It's safe to ignore.
+
+### Step 5: Commit Your Changes
+Save your changes to the local repo with a message:
+
+Set your name and email using:
+
+
+Try committing again:
+
+### Step 6: Push to Remote Repository
+Send your changes to GitHub:
+
+You may be asked to authorize Git Credential Manager
+
+Click "Authorize git-ecosystem"
+
+Enter your GitHub username and password or token
+
+# Now Check Your Repo!
