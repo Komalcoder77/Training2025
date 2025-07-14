@@ -703,3 +703,119 @@ CIDR allows flexible subnetting using notation like `/24`, replacing rigid class
 5. **Broadcast IP:**  
    First Subnet ends at → `205.150.65.63`
 
+# 🛠️ Training Day: 08
+
+## 🧠 What is DHCP?
+**DHCP – Dynamic Host Configuration Protocol**
+
+### 📌 Definition:
+DHCP is a network protocol that automatically gives IP addresses to devices (like your phone, computer, etc.) when they connect to a network.
+
+### 🔧 Why is DHCP used?
+- To avoid manual IP configuration.
+- To save time and reduce mistakes.
+- Makes it easy to manage IPs in big networks.
+
+### 🧠 How it Works (Simple Steps):
+1. You connect your device to Wi-Fi.
+2. Your device asks for an IP address.
+3. The DHCP server picks a free IP and gives it to your device.
+4. You are now connected to the network and internet!
+
+### 📎 Example:
+You connect your laptop to Wi-Fi.  
+DHCP gives it IP: `192.168.1.5`  
+Next time, it may give a different IP like `192.168.1.8`.
+
+### 🧾 Key Terms:
+
+| Term         | Meaning                                      |
+|--------------|----------------------------------------------|
+| DHCP Server  | The device (router or server) that gives IP addresses |
+| DHCP Client  | The device (your phone, PC, etc.) that gets an IP    |
+
+### 🔄 Without DHCP vs With DHCP
+
+| Action         | Manual IP (No DHCP) | DHCP (Automatic)     |
+|----------------|---------------------|-----------------------|
+| Set IP Address | You do it manually  | Given automatically   |
+| Easy to Use?   | ❌ No               | ✅ Yes               |
+| Error chances  | High                | Low                   |
+
+**✅ In Simple Words:** DHCP is like an auto-assign system that gives an IP address to each device, so you don’t have to do it yourself.
+
+---
+
+## 🛠️ Networking Commands: `ping`, `traceroute`, `ifconfig`
+
+### ✅ 1. `ping` Command
+
+**📌 What is it?**  
+`ping` checks if another computer or website is reachable and shows how long the data takes to travel there and back.
+
+**🧠 Technical Meaning:**  
+It sends small data packets (ICMP echo requests) to a target IP or domain, and waits for a reply.
+
+**🧪 Example Command:**
+```bash
+ping google.com
+
+
+# 🌐 Training Day: 09
+
+## ✅ Introduction to HTML
+
+---
+
+### ✅ What is HTML?
+
+- **HTML** stands for **HyperText Markup Language**.
+- It is the **standard language** used to create web pages.
+- It defines the **structure and layout** of content using **tags**.
+- HTML is **not a programming language**, but a **markup language**.
+- Files are saved with `.html` extension.
+
+---
+
+### ✅ What Does HTML Do?
+
+- Creates the **structure** of a web page.
+- Organizes content using elements like:
+  - Headings (`<h1> to <h6>`)
+  - Paragraphs (`<p>`)
+  - Images (`<img>`)
+  - Links (`<a>`)
+- Works with:
+  - **CSS** – for styling
+  - **JavaScript** – for interactivity
+- Acts as the **skeleton** of a webpage.
+
+---
+
+### ✅ How Does a Browser Render HTML?
+
+1. The browser loads the `.html` file.
+2. It reads the HTML **line-by-line** (top to bottom).
+3. It builds the **DOM (Document Object Model)** in memory.
+4. Converts tags into **visual elements**.
+5. Applies **CSS** for styling.
+6. Runs **JavaScript** for functionality.
+
+---
+
+### 💡 Example
+
+```html
+<h1>Hello</h1>
+
+# Basic structure of html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My First Page</title>
+  </head>
+  <body>
+    <h1>Welcome!</h1>
+    <p>This is a paragraph.</p>
+  </body>
+</html>
