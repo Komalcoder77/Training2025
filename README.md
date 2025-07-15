@@ -803,8 +803,6 @@ ping google.com
 ---
 
 # 💡 Example
-
-```html
 <h1>Hello</h1>
 
 # Basic structure of html
@@ -839,7 +837,6 @@ It structures content using **tags** that the **browser** can interpret and disp
 - Used to define **titles** and **subheadings**.
 - `<h1>` is the **largest**, `<h6>` is the **smallest**.
 
-```html
 <h1>Main Title</h1>
 <h2>Subheading</h2>
 <p>This is a paragraph of text.</p>
