@@ -748,7 +748,7 @@ Next time, it may give a different IP like `192.168.1.8`.
 
 ## 🛠️ Networking Commands: `ping`, `traceroute`, `ifconfig`
 
-### ✅ 1. `ping` Command
+# ✅ 1. `ping` Command
 
 **📌 What is it?**  
 `ping` checks if another computer or website is reachable and shows how long the data takes to travel there and back.
@@ -803,7 +803,7 @@ ping google.com
 
 ---
 
-### 💡 Example
+# 💡 Example
 
 ```html
 <h1>Hello</h1>
