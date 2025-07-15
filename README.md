@@ -1014,7 +1014,7 @@ Move into the project folder:
 
 # Step 2: Check Git Status
 Use this to see changes or file status:
-<img width="1118" height="280" alt="image" src="https://github.com/Komalcoder77/Training2025/blob/main/Screenshot%20(44).png?raw=true" />
+<img width="1118" height="310" alt="image" src="https://github.com/Komalcoder77/Training2025/blob/main/Screenshot%20(44).png?raw=true" />
 
 If it says "Up to date", everything is in sync
 
