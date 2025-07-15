@@ -997,7 +997,7 @@ It gives you control over what goes into the next commit
 
 Think of it as a review area before saving
 
-<img width="692" height="454" alt="image" src="https://github.com/user-attachments/assets/7ab5537f-2f02-4948-9554-6ec21210f08a" />
+<img width="692" height="454" alt="image" src="https://github.com/Komalcoder77/Training2025/blob/main/Screenshot%20(44).png?raw=true" />
 
 
 # How to Use Git (Using Command Line)
