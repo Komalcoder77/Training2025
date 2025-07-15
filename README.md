@@ -995,9 +995,7 @@ You use git add to move changes here
 
 It gives you control over what goes into the next commit
 
-Think of it as a review area before saving
-
-<img width="692" height="454" alt="image" src="https://github.com/Komalcoder77/Training2025/blob/main/Screenshot%20(44).png?raw=true" />
+Think of it as a review area before saving.
 
 
 # How to Use Git (Using Command Line)
@@ -1016,7 +1014,7 @@ Move into the project folder:
 
 # Step 2: Check Git Status
 Use this to see changes or file status:
-<img width="1118" height="280" alt="image" src="https://github.com/user-attachments/assets/f3177e01-249b-4ec5-9e7b-ba9cefc87e52" />
+<img width="1118" height="280" alt="image" src="https://github.com/Komalcoder77/Training2025/blob/main/Screenshot%20(44).png?raw=true" />
 
 If it says "Up to date", everything is in sync
 
