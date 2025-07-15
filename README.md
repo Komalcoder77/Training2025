@@ -757,7 +757,6 @@ Next time, it may give a different IP like `192.168.1.8`.
 It sends small data packets (ICMP echo requests) to a target IP or domain, and waits for a reply.
 
 **🧪 Example Command:**
-```bash
 ping google.com
 
 
